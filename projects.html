@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Chakradhar's Portfolio</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+
+<body class="light-mode project-page">
+
+<!-- Project Templates (hidden) -->
+<template id="project-template-4">
+    <div class="project-header">
+        <h1>Project 4 Title</h1>
+        <div class="project-tags">
+            <span>Power BI</span>
+            <span>Data Analysis</span>
+            <span>Visualization</span>
+        </div>
+    </div>
+    <div class="project-section">
+        <h2>Background</h2>
+        <p>Brief background description for Project 4 Title.</p>
+    </div>
+    <div class="project-section">
+        <h2>Embedded Dashboard</h2>
+        <div class="dashboard-container">
+            <div class="responsive-iframe-container">
+                <iframe allowfullscreen="" src="https://app.powerbi.com/view?r=eyJrIjoiNTljZGMzZTItZDkwMC00MzJjLWE2YjktMDlhNjhiYjM0YWY3IiwidCI6IjQ2NTRiNmYxLTBlNDctNDU3OS1hOGExLTAyZmU5ZDk0M2M3YiIsImMiOjl9"></iframe>
+            </div>
+            <p class="dashboard-note">Interactive Power BI dashboard in 16:9 HD frame.</p>
+        </div>
+    </div>
+    <div class="project-section">
+        <h2>Presentation</h2>
+        <div class="video-container">
+            <div class="responsive-iframe-container">
+                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/f8U4hTz71LE" title="Project 4 Title Demo Video"></iframe>
+            </div>
+            <p class="video-note">HD walkthrough video explaining the dashboard and insights.</p>
+        </div>
+    </div>
+    <div class="project-footer">
+        <a class="btn github-btn" href="#" target="_blank">
+            <i class="fab fa-github"></i>
+            View on GitHub
+        </a>
+    </div>
+</template>
+
+<!------------------------------------------------------------- 👇👇👇 EV Project 👇👇👇 ------------------------------------------------------>
+<template id="project-template-3">
+    <div class="project-header">
+        <h1>EV Market Analysis</h1>
+    </div>
+
+    <div class="project-documentation">
+        <div class="project-section">
+            <h2>Tools Used</h2>
+            <p>Python (Pandas, Seaborn, Matplotlib), Looker Studio</p>
+        </div>
+
+        <div class="project-section data-source-link">
+            <h2>Data Source</h2>
+            <p>
+                <a href="https://codebasics.io/challenge/codebasics-resume-project-challenge/15"
+                target="_blank" class="plain-link" title="Opens external link">
+                    Codebasics Resume Project Challenge <i class="fas fa-external-link-alt"></i>
+                </a>
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Background</h2>
+            <p>
+            AtliQ Motors, a U.S based electric vehicle manufacturer, has built a strong presence in North America, holding about 25% of the EV market. The company is now planning to expand into India, where its current market share is less than 2%.
+            </p>
+
+            <p>
+            India's EV landscape is evolving quickly, with strong policy support and growing public interest. But market dynamics vary widely across states, vehicle types, and manufacturers. Before moving forward, AtliQ wanted a clear, data-backed view of the current market to support strategic planning.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Objective</h2>
+            <p>
+               This project analyzes the performance and growth of India's electric vehicle (EV) market in the 2-wheeler and 4-wheeler segments using data from FY 2022 to FY 2024, with the goal of generating insights to support AtliQ Motors in assessing market potential and shaping its expansion strategy. 
+            </p>
+            <p>The analysis focuses on:</p>
+            <ul>
+                <li>Regional adoption</li>
+                <li>Manufacturer performance</li>
+                <li>Sales growth</li>
+                <li>Penetration trends</li>
+                <li>Revenue potential</li>
+            </ul>
+            <p>
+                A set of specific business questions are provided to guide the analysis. These are addressed using Python, and the findings are presented through an interactive report built in Looker Studio.
+            </p>
+        </div>
+    </div>
+
+    <div class="project-section">
+        <h2>Process</h2>
+        <p>
+            For this project, I used Python in a Kaggle Notebook environment. The entire analysis was carried out using standard Python libraries like Pandas, NumPy, Matplotlib, and Seaborn. An interactive report was developed in Looker Studio.
+        </p>
+
+        <p>The data used for the project was sourced from the Vahan Sewa Open Data, provided as part of the Codebasics data challenge. The main datasets included:</p>
+        <ul>
+            <li>electric_vehicle_sales_by_makers.csv : Tracks monthly EV sales across different manufacturers and vehicle categories.</li>
+            <li>electric_vehicle_sales_by_state.csv : Contains monthly EV sales data categorized by state and vehicle type (2-Wheeler or 4-Wheeler)</li>
+            <li>dim_date.csv : Provides fiscal year and quarter details for time-series analysis</li>
+        </ul>
+        <p>After loading and inspecting the datasets, I started by cleaning and preparing the data for analysis. I used Pandas functions to check for structural issues and data quality, standardized column names, and confirmed consistency across all datasets</p>
+
+        <p>Next, I joined the main EV datasets with the dim_date table to bring in fiscal year and quarter information. This allowed me to structure the analysis on a time-series basis and enabled trend comparisons across fiscal periods.</p>
+        <p>With the data structured, I moved on to computing the key performance indicators (KPIs):</p>
+        <ul>
+            <li>Electric Vehicles Sold: Total number of EV units sold</li>
+            <li>Penetration Rate: Percentage of EVs out of total vehicle sales</li>
+            <li>CAGR (Compound Annual Growth Rate): Average annual growth rate of EV sales over a defined period</li>
+            <li>Revenue: Estimated income from EV sales</li>
+        </ul>
+        <p>After setting up the KPIs, I started the analysis to address the key business questions and uncover insights around market growth, regional trends, and competitive positioning.</p>
+
+        <p>Once the analysis was complete in Python, I prepared a structured dataset with all the key metrics and dimensions required for reporting. This dataset was exported and connected to <strong>Looker Studio</strong> to build an interactive dashboard. The report allows users to filter by fiscal year, state, vehicle type, and manufacturer, making it easier to explore EV adoption patterns, growth trends, and performance comparisons across regions and segments.</p>
+
+        <div class="project-section">
+            <h2>Business Questions</h2>
+            <div class="dashboard-container">
+                <div class="embedded-slider">
+                    <!-- Navigation arrows -->
+                    <div class="navigation-controls">
+                        <button class="nav-arrow" id="prevBtn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="nav-arrow" id="nextBtn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Image container -->
+                    <div class="image-container" id="evSlides">
+                        <img src="/assets/project_images/ev_market_analysis/Business_Request_01_01.jpg" alt="Business Request 1_1" class="slide active" loading="lazy" />
+                        <img src="/assets/project_images/ev_market_analysis/Business_Request_01_02.jpg" alt="Business Request 1_2" class="slide" loading="lazy" />
+                        <img src="/assets/project_images/ev_market_analysis/Business_Request_02.jpg" alt="Business Request 2" class="slide" loading="lazy" />
+                        <img src="/assets/project_images/ev_market_analysis/Business_Request_03.jpg" alt="Business Request 3" class="slide" loading="lazy" />
+                        <img src="/assets/project_images/ev_market_analysis/Business_Request_04.jpg" alt="Business Request 4" class="slide" loading="lazy" />
+                        <img src="/assets/project_images/ev_market_analysis/Business_Request_05.jpg" alt="Business Request 5" class="slide" loading="lazy" />
+                        <img src="/assets/project_images/ev_market_analysis/Business_Request_06.jpg" alt="Business Request 6" class="slide" loading="lazy" />
+                        <img src="/assets/project_images/ev_market_analysis/Business_Request_07.jpg" alt="Business Request 7" class="slide" loading="lazy" />
+                        <img src="/assets/project_images/ev_market_analysis/Business_Request_08.jpg" alt="Business Request 8" class="slide" loading="lazy" />
+                        <img src="/assets/project_images/ev_market_analysis/Business_Request_09.jpg" alt="Business Request 9" class="slide" loading="lazy" />
+                    </div>
+
+                    <!-- Indicators -->
+                    <div class="indicators" id="evIndicators">
+                        <div class="indicator active" data-slide="0"></div>
+                        <div class="indicator" data-slide="1"></div>
+                        <div class="indicator" data-slide="2"></div>
+                        <div class="indicator" data-slide="3"></div>
+                        <div class="indicator" data-slide="4"></div>
+                        <div class="indicator" data-slide="5"></div>
+                        <div class="indicator" data-slide="6"></div>
+                        <div class="indicator" data-slide="7"></div>
+                        <div class="indicator" data-slide="8"></div>
+                        <div class="indicator" data-slide="9"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Final Thoughts</h2>
+            <p>This report transformed raw sales data into clear, actionable insights for Lee's merchandise business. Key takeaways include:</p>
+            <ul>
+                <li><strong>Steady Growth:</strong> Revenue and order volume increased post-launch, signaling healthy business momentum.</li>
+                <li><strong>Category Performance:</strong> Clothing dominated in both revenue and AOV, while Ornaments performed well in volume.</li>
+                <li><strong>Top Products:</strong> The Hoodie led across all metrics; the Backpack underperformed.</li>
+                <li><strong>Market Insights:</strong> Domestic buyers drove volume, while international markets brought higher-value orders.</li>
+                <li><strong>Customer Feedback:</strong> Products with 4–5 star ratings and positive reviews saw significantly better sales.</li>
+            </ul>
+            <p>With data-backed clarity, Lee can now make smarter decisions that fuel growth and improve customer satisfaction.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>Presentation</h2>
+            <div class="video-container">
+                <div class="responsive-iframe-container">
+                    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/f8U4hTz71LE" title="Project Demo Video"></iframe>
+                </div>
+                <p class="video-note">HD walkthrough video explaining the dashboard and insights.</p>
+            </div>
+        </div>
+
+        <div class="project-footer">
+            <a class="btn github-btn" href="#" target="_blank">
+                <i class="fab fa-github"></i>
+                View on GitHub
+            </a>
+        </div>
+    </div>
+</template>
+<!------------------------------------------------------------- 👆👆👆 EV Project 👆👆👆 ------------------------------------------------------>
+
+<!------------------------------------------------------------- 👇👇👇 Data Explorer Project 👇👇👇 ------------------------------------------------------>
+
+<template id="project-template-2">
+    <div class="project-header">
+        <h1>Data Explorer Tool</h1>
+    </div>
+
+    <div class="project-documentation">
+        <div class="project-section">
+            <h2>Tools Used</h2>
+            <p>Streamlit, Python, Pandas, Numpy, Matplotlib</p>
+        </div>
+
+        <div class="project-section data-explorer-link">
+            <h2>Launch the App</h2>
+            <p>
+                <a href="https://data-explorer-tool-5ulhzorrzmzjschb5pqfmr.streamlit.app/"
+                target="_blank" class="plain-link" title="Opens external link">
+                    Click here to explore the app <i class="fas fa-external-link-alt"></i>
+                </a>
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Why This App Was Built</h2>
+            <p>
+                While working on several data competitions, particularly Power BI challenges, I often found myself repeating the same routine. Every time a new dataset arrived, I would start by manually scanning through it. I would check column types, identify missing values, count unique entries, and get a sense of the distributions. It was the necessary first step before any meaningful analysis, but it was also repetitive and time-consuming.
+            </p>
+
+            <p>
+                At first, I managed this process manually, often jotting observations in a notebook. Over time, I started scripting the steps in Python to speed things up. These scripts were not complex, just enough to give a quick overview, but they helped reduce the time spent on early exploration. As I reused them across different projects, I began to see an opportunity to turn them into something more consistent and user-friendly.
+            </p>
+
+            <p>
+                That's when I came across Streamlit, a lightweight Python framework for building interactive data apps. It allowed me to take those scripts and build a simple web interface around them. The result was the <span class="mild-bold">Data Explorer Tool</span>, a small application built to make the initial phase of working with any dataset easier.
+            </p>
+            <div class="data-explorer-app-container">
+                <img src="/assets/project_images/data_explorer_app/data-explorer-tool-img.png"
+                    alt="Data Explorer App Image"
+                    class="data-explorer-app-image" loading="lazy" />
+            </div>
+
+            <p>
+                The tool lets users upload a CSV or Excel file and interactively explore it. It includes features like data type summaries, missing value checks, and more. It is not meant to be a comprehensive solution, but a lightweight and efficient way to understand the structure and quality of a dataset without writing code every time.
+            </p>
+
+            <p>
+                The goal was never to build something overly complex. It was simply to reduce repetitive effort in my own workflow. That said, it can be useful to anyone who regularly works with datasets or is learning how to explore data in a structured way.
+            </p>
+
+            <p>
+                In future versions, I plan to add more features in to the app. The full source code used to build the app is available on my GitHub, in case anyone wants to explore or extend it further.
+            </p>
+        </div>
+    </div>
+
+    <div class="project-section">
+        <h2>Presentation</h2>
+        <div class="video-container">
+            <div class="responsive-iframe-container">
+                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/f8U4hTz71LE" title="Project Demo Video"></iframe>
+            </div>
+            <p class="video-note">HD walkthrough video explaining the dashboard and insights.</p>
+        </div>
+    </div>
+
+    <div class="project-footer">
+        <a class="btn github-btn" href="#" target="_blank">
+            <i class="fab fa-github"></i>
+            View on GitHub
+        </a>
+    </div>
+</template>
+<!------------------------------------------------------------- 👆👆👆 Data Explorer Project 👆👆👆 ------------------------------------------------------>
+
+<!------------------------------------------------------------- 👇👇👇 Merchandise Project 👇👇👇 ------------------------------------------------------>
+<template id="project-template-1">
+    <div class="project-header">
+        <h1>Merchandise Sales Analysis</h1>
+    </div>
+
+    <div class="project-documentation">
+        <div class="project-section">
+            <h2>Tools Used</h2>
+            <p>Power BI, Figma</p>
+        </div>
+
+        <div class="project-section data-source-link">
+            <h2>Data Source</h2>
+            <p>
+                <a href="https://zoomcharts.com/en/microsoft-power-bi-custom-visuals/challenges/onyx-data-january-2025"
+                target="_blank" class="plain-link" title="Opens external link">
+                    ZoomCharts Power BI Challenge <i class="fas fa-external-link-alt"></i>
+                </a>
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Background</h2>
+            <p>
+                Lee Chatmen is a U.S.-based TikTok creator who rose to fame through his viral miniature guitar performances. With over 7 million followers, he built a strong personal brand and launched his own merchandise line in 2023.
+            </p>
+            <p>
+                As his business grew, Lee realized the importance of using data to better understand how his merchandise was performing. He needed an interactive and visual solution to help him track key business metrics and make confident decisions backed by data.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Objective</h2>
+            <p>
+                Lee reached out with a clear need, a report that could help him answer important questions about his merchandise line and guide future strategies.
+            </p>
+            <p>The goal was to build an interactive Power BI report that would help Lee:</p>
+            <ul>
+                <li>Understand how merchandise is performing overall</li>
+                <li>Identify top-selling and low-performing products</li>
+                <li>Analyze sales distribution across countries and customer segments</li>
+                <li>Assess the impact of reviews and ratings on product performance</li>
+                <li>Explore trends in shipping charges and their effect on sales</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="project-section">
+        <h2>Process</h2>
+        <p>
+            The dataset was sourced from Lee (ZoomCharts challenge) and included merchandise sales records, product details, customer demographics, and shipping information. After a through review, I imported the data into Power BI Desktop for transformation and analysis.
+        </p>
+
+        <h4>Data Cleaning</h4>
+        <p>Using Power Query, I performed several key transformations:</p>
+        <ul>
+            <li>Changed column data types to ensure correct aggregations</li>
+            <li>Renamed fields for better clarity and consistency</li>
+            <li>Replaced category values with standardized labels</li>
+            <li>Created fact and dimension tables from the original flat file</li>
+            <li>Added external reference tables for sentiment and country metadata</li>
+        </ul>
+        <p>This step ensured that the dataset was ready for data modelling and analysis.</p>
+
+        <h4>Data Modeling</h4>
+        <p>I structured the data model using a star schema, with:</p>
+        <ul>
+            <li>A central fact table for sales transactions</li>
+            <li>Supporting dimension tables for products, dates, countries, and sentiment</li>
+        </ul>
+        <p>I created the custom date table using DAX to enable time intelligence (e.g., trend analysis, MOM changes). Relationships between tables were explicitly defined to support accurate filtering and to avoid ambiguity or circular dependencies.</p>
+
+        <div class="merch-data-model-image">
+            <h4>Model Image</h4>
+            <img src="/assets/project_images/merchandise_sales/Merchandise_Data_Model.png"
+                alt="Merchandise Data Model" loading="lazy" />
+        </div>
+
+        <h4>DAX Measures</h4>
+        <p>For analysis, I created a mix of DAX measures, some designed to enable report interactivity (e.g., dynamic KPI switches, dynamic titles) and others built as core business KPIs, including:</p>
+        <ul>
+            <li><span class="mild-bold">Order Count</span>: Total number of unique orders</li>
+            <li><span class="mild-bold">Quantity Sold</span>: Total units sold</li>
+            <li><span class="mild-bold">Revenue (USD)</span>: Total sales revenue</li>
+            <li><span class="mild-bold">Average Order Value (AOV)</span>: Average amount spent per order</li>
+            <li><span class="mild-bold">Average Rating</span>: Mean customer rating</li>
+            <li><span class="mild-bold">Shipping Charges</span>: Delivery costs per transaction</li>
+        </ul>
+        <p>These KPIs formed the foundation of the analysis and were critical in answering the key business questions</p>
+    </div>
+
+    <div class="project-section">
+        <h4>Report Design</h4>
+        <p>The final deliverable was an interactive Power BI Report with three pages:</p>
+        <ul>
+            <li>Products</li>
+            <li>Customers</li>
+            <li>Reviews</li>
+        </ul>
+        <p>Each page was designed to be interactive, easy to explore, and aligned with Lee's decision-making needs.</p>
+    </div>
+
+    <div class="project-section">
+        <h2>Merchandise Sales Report</h2>
+        <p>Please refresh the page if the Power BI report doesn't display correctly.</p>
+        <div class="dashboard-container">
+            <div class="responsive-iframe-container">
+                <iframe allowfullscreen="" src="https://app.powerbi.com/view?r=eyJrIjoiNTljZGMzZTItZDkwMC00MzJjLWE2YjktMDlhNjhiYjM0YWY3IiwidCI6IjQ2NTRiNmYxLTBlNDctNDU3OS1hOGExLTAyZmU5ZDk0M2M3YiIsImMiOjl9"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-section">
+        <h2>Insights</h2>
+        <p>
+            To assess how the business performed over time, I compared average monthly metrics during the launch phase (Nov–Dec 2023) with those in the post-launch phase (Jan–Nov 2024). Since the periods are different in length, I used monthly averages to make a fair comparison.
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>Nov–Dec 2023 Avg</th>
+                    <th>Jan–Nov 2024 Avg</th>
+                    <th>% Change</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Revenue</td><td>$67,695</td><td>$70,733</td><td>+4.5%</td></tr>
+                <tr><td>Quantity Sold</td><td>994</td><td>1,022</td><td>+2.8%</td></tr>
+                <tr><td>Order Count</td><td>576</td><td>652</td><td>+13.2%</td></tr>
+                <tr><td>AOV</td><td>$68.94</td><td>$69.62</td><td>+1.0%</td></tr>
+            </tbody>
+        </table>
+        <p>
+            These changes point to steady business growth. Revenue increased by 4.5%, and order volume went up by over 13%, suggesting more customers are making purchases. The number of units sold has grown slightly, and average spending per order has remained consistent.
+        </p>
+
+        <h4>Product category performance</h4>
+        <p>The merchandise line consists of three categories: Clothing, Ornaments, and Other. Performance varies significantly across them.</p>
+        <ul>
+            <li>Clothing leads the way with $637K in revenue, over 4× more than Ornaments ($156K) and nearly 10× more than Other products ($63K).</li>
+            <li>It also has the highest AOV at $104.57, showing customers are willing to spend more on apparel.</li>
+            <li>Ornaments perform well in volume (3,768 units sold) despite a lower AOV of $41.20.</li>
+            <li>The Other category shows the least demand and lowest revenue.</li>
+        </ul>
+
+        <h4>Product performance</h4>
+        <p>The Hoodie (BF1548) was the top performer across all metrics. It generated $190,640 in revenue, with 2,421 units sold and 1,497 orders.</p>
+        <p>The Backpack (BF1555) had the lowest performance, with just $8,666 in revenue, 227 units sold, and 133 orders.</p>
+
+        <h4>Domestic vs International</h4>
+        <p>There was a noticeable difference between Domestic and international sales</p>
+        <ul>
+            <li>Domestic (U.S) sales brought in over $350,000, with 8,521 units sold from 5,139 orders. The AOV was around $55.15.</li>
+            <li>International sales (India, Australia, the UK, Canada, and France) generated $386,856 from 3,813 units and 2,255 orders. The AOV for these markets was much higher, at $103.18.</li>
+        </ul>
+        <p>In short, domestic markets bring volume, while international buyers place fewer but higher-value orders.</p>
+
+        <h4>Ratings and Review Sentiment</h4>
+        <p>Customer ratings clearly influenced sales performance.</p>
+        <ul>
+            <li>5-star rated products made $258.5K with 3,722 units sold</li>
+            <li>4-star products closely followed with $255.9K from 3,695 units</li>
+            <li>1- and 2-star products made up only about 18% of total sales</li>
+        </ul>
+
+        <p>Review sentiment played a big role as well.</p>
+        <p>Positive comments like <em>Premium quality as usual</em> and <em>Handled with care</em> led to stronger sales.</p>
+        <ul>
+            <li>Premium quality as usual → $46.4K, 632 units, 365 orders</li>
+            <li>Handled with care → $52.4K, 744 units, 448 orders</li>
+        </ul>
+
+        <p>Negative feedback showed lower performance:</p>
+        <ul>
+            <li>Never buying again → $22.7K, 299 units</li>
+            <li>Poor quality → $15.6K, 256 units</li>
+            <li>Waste of money → $22.4K, 333 units</li>
+        </ul>
+
+        <p>Neutral reviews like <em>It was ok</em> or <em>Slight delays but good product</em> resulted in moderate engagement.</p>
+        <p>In short: Higher ratings and a positive emotional tone in reviews were linked to better product performance. Negative sentiment led to lower sales and engagement.</p>
+    </div>
+
+    <div class="project-section">
+        <h2>Final Thoughts</h2>
+        <p>This report transformed raw sales data into clear, actionable insights for Lee's merchandise business. Key takeaways include:</p>
+        <ul>
+            <li><strong>Steady Growth:</strong> Revenue and order volume increased post-launch, signaling healthy business momentum.</li>
+            <li><strong>Category Performance:</strong> Clothing dominated in both revenue and AOV, while Ornaments performed well in volume.</li>
+            <li><strong>Top Products:</strong> The Hoodie led across all metrics; the Backpack underperformed.</li>
+            <li><strong>Market Insights:</strong> Domestic buyers drove volume, while international markets brought higher-value orders.</li>
+            <li><strong>Customer Feedback:</strong> Products with 4–5 star ratings and positive reviews saw significantly better sales.</li>
+        </ul>
+        <p>With data-backed clarity, Lee can now make smarter decisions that fuel growth and improve customer satisfaction.</p>
+    </div>
+
+    <div class="project-section">
+        <h2>Presentation</h2>
+        <div class="video-container">
+            <div class="responsive-iframe-container">
+                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/f8U4hTz71LE" title="Project Demo Video"></iframe>
+            </div>
+            <p class="video-note">HD walkthrough video explaining the dashboard and insights.</p>
+        </div>
+    </div>
+
+    <div class="project-footer">
+        <a class="btn github-btn" href="https://github.com/Chakradhar-M/data-challenges-projects/tree/main/Merchandise-Sales-Analysis" target="_blank">
+            <i class="fab fa-github"></i>
+            View on GitHub
+        </a>
+    </div>
+</template>
+<!------------------------------------------------------------- 👆👆👆 Merchandise Project 👆👆👆 ------------------------------------------------------>
+
+<div class="theme-toggle">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun active"></i>
+</div>
+
+<div class="container">
+    <div class="project-detail-container">
+        <a class="back-btn" href="index.html">
+            <i class="fas fa-arrow-left"></i>
+            Back to Portfolio
+        </a>
+        <div class="glass-card" id="project-details">
+            <!-- Project content will be dynamically loaded here -->
+            <div class="loader">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

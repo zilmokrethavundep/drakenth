@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chakradhar's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+</head>
+
+<body class="light-mode">
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay"></div>
+
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun active"></i>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="/assets/images/chakra.png" alt="Profile Image" loading="lazy">
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#about" class="nav-link active" data-section="about"><i class="fas fa-user"></i> About Me</a></li>
+                    <li><a href="#skills" class="nav-link" data-section="skills"><i class="fas fa-chart-bar"></i> Skills</a></li>
+                    <li><a href="#projects" class="nav-link" data-section="projects"><i class="fas fa-code"></i> Projects</a></li>
+                    <li><a href="#challenges" class="nav-link" data-section="challenges"><i class="fas fa-flag-checkered"></i> Challenges</a></li>
+                    <li><a href="#resume" class="nav-link" data-section="resume"><i class="fas fa-file"></i> Resume</a></li>
+                    <li><a href="#experience" class="nav-link" data-section="experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                    <li><a href="#achievements" class="nav-link" data-section="achievements"><i class="fas fa-trophy"></i> Achievements</a></li>
+                    <li><a href="#certifications" class="nav-link" data-section="certifications"><i class="fas fa-certificate"></i> Certifications</a></li>
+                    <li><a href="#services" class="nav-link" data-section="services"><i class="fas fa-cogs"></i> Services</a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact"><i class="fas fa-envelope"></i> Contact Me</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <!-- About Me -->
+            <section id="about" class="section active" data-title="About Me - Chakradhar's Portfolio">
+                <div class="section-container">
+                    <h1>About Me</h1>
+
+                    <div class="glass-card">
+                        <h2>I'm M Chakradhar</h2>
+                            <div class="title-and-badge">
+                                <h3>Data Analyst • BI Developer • AI Practitioner</h3>
+                                <div class="hire-badge">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Available for Hire</span>
+                                </div>
+                            </div>
+                        <p>I completed my schooling at Jawahar Navodaya Vidyalaya and earned an Integrated Master's degree in Systems Biology from the University of Hyderabad. During my Master's, I worked on research projects involving metabolomics and transcriptomics data.</p>
+                        <p>This experience sparked my interest in data science, and since then, I have been learning and applying tools like Python, SQL, Power BI, and AI to solve real problems. I enjoy turning data into insights that help businesses make better decisions.</p>
+                        <p>I am passionate about growing my skills and contributing as a Data & AI professional to deliver meaningful and practical solutions.</p>
+                        <div class="btn-container">
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/chakradhar-mantena/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/Chakradhar-M" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                                <a href="https://www.youtube.com/@DataMeru" target="_blank" aria-label="YouTube Channel"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.kaggle.com/chakra100824" target="_blank" aria-label="Kaggle Profile"><i class="fab fa-kaggle"></i></a>
+                                <a href="https://x.com/Chakra04062025" target="_blank" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Skills & Section -->
+            <section id="skills" class="section" data-title="Skills & Expertise - Chakradhar's Portfolio">
+                <div class="section-container">
+                    <h1>Skills & Expertise</h1>
+                    <div class="skills-container">
+                        <div class="glass-card">
+                            <h3>Technical Tools</h3>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p>Python</p>
+                                    <p>75%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p>SQL</p>
+                                    <p>80%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p>Power BI</p>
+                                    <p>85%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p>Looker Studio</p>
+                                    <p>65%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="65%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p>Data Science Libraries</p>
+                                    <p>80%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p>AI Tools</p>
+                                    <p>85%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="glass-card">
+                            <h3>Core Competencies & Soft Skills</h3>
+                            <div class="competencies">
+                                <span>Data Cleaning</span>
+                                <span>Data Modeling</span>
+                                <span>Data Visualization</span>
+                                <span>Data Storytelling</span>
+                                <span>Requirement Gathering</span>
+                                <span>Web Scraping</span>
+                                <span>Automation</span>
+                                <span>UX/UI Design</span>
+                                <span>Report Building</span>
+                                <span>Teamwork</span>
+                                <span>Client Management</span>
+                                <span>Problem Solving</span>
+                                <span>Time Management</span>
+                                <span>Effective Communication</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section id="projects" class="section" data-title="Projects - Chakradhar's Portfolio">
+                <div class="section-container">
+                    <h1>Projects</h1>
+                    <div class="projects-grid">
+                        <div class="glass-card project-card">
+                            <div class="project-img">
+                                <img src="/assets/project_thumbnails/merchandise_thumbnail.png" alt="Merchandise Analysis Project" loading="lazy">
+                            </div>
+                            <div class="project-content">
+                                <h3>Merchandise Analysis</h3>
+                                <p>An interactive Power BI report analyzing the performance of an influencer's merchandise business.</p>
+                                <div class="project-links">
+                                    <a href="projects.html?id=1" class="btn secondary view-btn">View Project</a>
+                                    <a href="#" class="btn github-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="glass-card project-card">
+                            <div class="project-img">
+                                <img src="/assets/project_thumbnails/data_explorer_tool_thumbnail.png" alt="Data Explorer Tool Project" loading="lazy">
+                            </div>
+                            <div class="project-content">
+                                <h3>Data Explorer Tool</h3>
+                                <p>A Streamlit-based data app built with Python that enables quick exploration of any dataset.</p>
+                                <div class="project-links">
+                                    <a href="projects.html?id=2" class="btn secondary view-btn">View Project</a>
+                                    <a href="#" class="btn github-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="glass-card project-card">
+                            <div class="project-img">
+                                <img src="/assets/project_thumbnails/ev_market_analysis_thumbnail.png" alt="EV Market Analysis Project" loading="lazy">
+                            </div>
+                            <div class="project-content">
+                                <h3>EV Market Analysis</h3>
+                                <p>A comprehensive analysis of healthcare data to identify patterns and improve patient outcomes.</p>
+                                <div class="project-links">
+                                    <a href="projects.html?id=3" class="btn secondary view-btn">View Project</a>
+                                    <a href="#" class="btn github-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="glass-card project-card">
+                            <div class="project-img">
+                                <img src="/assets/project_thumbnails/cab_services_analysis_thumbnail.png" alt="Cab Services Analysis Project" loading="lazy">
+                            </div>
+                            <div class="project-content">
+                                <h3>Cab Services Analysis</h3>
+                                <p>A machine learning project to segment customers based on purchasing behavior.</p>
+                                <div class="project-links">
+                                    <a href="projects.html?id=4" class="btn secondary view-btn">View Project</a>
+                                    <a href="#" class="btn github-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Challenges -->
+            <section id="challenges" class="section" data-title="Challenges - Chakradhar's Portfolio">
+                <div class="section-container">
+                    <h1>Data Challenges</h1>
+
+                    <div class="section-container">
+                        <div class="glass-card challenges-head-card">
+                            <p>This section features all the data challenges I've participated in, excluding those already listed under projects.</p>
+                            
+                            <div class="challenge-stats">
+                                <div class="challenge-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>9 Challenges Participated</span>
+                                </div>
+                                <div class="challenge-item">
+                                    <i class="fas fa-medal"></i>
+                                    <span>Top 5 Finalist in 2 Challenges</span>
+                                </div>
+                                <div class="challenge-item">
+                                    <i class="fas fa-trophy"></i>
+                                    <span>Winner in 2 Challenges</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="challenges-grid">
+                        <div class="glass-card challenges-card">
+                            <div class="challenges-img">
+                                <img src="/assets/project_thumbnails/mobile_sales_analysis_thumbnail.png" alt="Merchandise Analysis Project" loading="lazy">
+                            </div>
+                            <div class="challenges-content">
+                                <h3>Mobile Sales Analysis</h3>
+                                <p>This project analyzes 2024 mobile phone sales for a multinational retailer.</p>
+                                <div class="challenges-links">
+                                    <a href="https://mavenanalytics.io/project/33722" class="btn secondary view-btn" target="_blank">View Project</a>
+                                    <a href="https://github.com/Chakradhar-M/data-challenges-projects/tree/main/Retail-Mobile-Sales-Analysis" class="btn github-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="glass-card challenges-card">
+                            <div class="challenges-img">
+                                <img src="/assets/project_thumbnails/supply_chain_analysis_thumbnail.png" alt="Data Explorer Tool Project" loading="lazy">
+                            </div>
+                            <div class="challenges-content">
+                                <h3>Supply Chain Analysis</h3>
+                                <p>This Project delivers supply chain insights on inventory, supplier performance, and logistics.</p>
+                                <div class="challenges-links">
+                                    <a href="https://mavenanalytics.io/project/33617" class="btn secondary view-btn" target="_blank">View Project</a>
+                                    <a href="https://github.com/Chakradhar-M/data-challenges-projects/tree/main/Supply-Chain-Analysis" class="btn github-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="glass-card challenges-card">
+                            <div class="challenges-img">
+                                <img src="/assets/project_thumbnails/holiday_sales_analysis_thumbnail.png" alt="EV Market Analysis Project" loading="lazy">
+                            </div>
+                            <div class="challenges-content">
+                                <h3>Holiday Sales Analysis</h3>
+                                <p>This project analyzes sales data from Holiday, and regular shopping periods to reveal consumer behavior trends.</p>
+                                <div class="challenges-links">
+                                    <a href="https://mavenanalytics.io/project/33616" class="btn secondary view-btn" target="_blank">View Project</a>
+                                    <a href="https://github.com/Chakradhar-M/data-challenges-projects/tree/main/Christmas-Sales-Analysis" class="btn github-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="glass-card challenges-card">
+                            <div class="challenges-img">
+                                <img src="/assets/project_thumbnails/logistics_analysis_thumbnail.png" alt="Cab Services Analysis Project" loading="lazy">
+                            </div>
+                            <div class="challenges-content">
+                                <h3>Logistics Analysis</h3>
+                                <p>This project explores logistics data to optimize shipments, cut delays, and boost efficiency.</p>
+                                <div class="challenges-links">
+                                    <a href="https://mavenanalytics.io/project/33619" class="btn secondary view-btn" target="_blank">View Project</a>
+                                    <a href="https://github.com/Chakradhar-M/data-challenges-projects/tree/main/Logistics-Analysis" class="btn github-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="glass-card challenges-card">
+                            <div class="challenges-img">
+                                <img src="/assets/project_thumbnails/crime_analysis_thumbnail.png" alt="Cab Services Analysis Project" loading="lazy">
+                            </div>
+                            <div class="challenges-content">
+                                <h3>Crime Analysis</h3>
+                                <p>This Project analyzes crime patterns in Washington, D.C., focusing on crime frequency, hotspots, trends, and severity.</p>
+                                <div class="challenges-links">
+                                    <a href="https://mavenanalytics.io/project/33618" class="btn secondary view-btn" target="_blank">View Project</a>
+                                    <a href="https://github.com/Chakradhar-M/data-challenges-projects/tree/main/Crime-Analysis" class="btn github-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="glass-card challenges-card">
+                            <div class="challenges-img">
+                                <img src="/assets/project_thumbnails/candy_market_analysis_thumbnail.png" alt="Cab Services Analysis Project" loading="lazy">
+                            </div>
+                            <div class="challenges-content">
+                                <h3>Candy Market Analysis</h3>
+                                <p>This project analyzes confectionery market data from a top European market research firm.</p>
+                                <div class="challenges-links">
+                                    <a href="https://mavenanalytics.io/project/33916" class="btn secondary view-btn" target="_blank">View Project</a>
+                                    <a href="https://github.com/Chakradhar-M/data-challenges-projects/tree/main/Confectionery-Market-Analysis" class="btn github-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="glass-card challenges-card">
+                            <div class="challenges-img">
+                                <img src="/assets/project_thumbnails/airline_delays_thumbnail.png" alt="Cab Services Analysis Project" loading="lazy">
+                            </div>
+                            <div class="challenges-content">
+                                <h3>Flight Delays Analysis</h3>
+                                <p>This project analyzes flight delays across airports and airlines.</p>
+                                <div class="challenges-links">
+                                    <a href="https://mavenanalytics.io/project/33917" class="btn secondary view-btn" target="_blank">View Project</a>
+                                    <a href="https://github.com/Chakradhar-M/data-challenges-projects/tree/main/Airline-Delays-Analysis" class="btn github-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="glass-card challenges-card">
+                            <div class="challenges-img">
+                                <img src="/assets/project_thumbnails/email_campaign_analysis_thumbnail.png" alt="Cab Services Analysis Project" loading="lazy">
+                            </div>
+                            <div class="challenges-content">
+                                <h3>Email Campaign Analysis</h3>
+                                <p>This project analyzes email campaign performance for a DIY content platform.</p>
+                                <div class="challenges-links">
+                                    <a href="https://mavenanalytics.io/project/33919" class="btn secondary view-btn" target="_blank">View Project</a>
+                                    <a href="https://github.com/Chakradhar-M/data-challenges-projects/tree/main/Email-Campaign-Analysis" class="btn github-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resume -->
+            <section id="resume" class="section" data-title="Resume - Chakradhar's Portfolio">
+                <div class="section-container">
+                    <h1>Resume</h1>
+                    <div class="glass-card resume-card">
+                        <p>Download my resume to learn more about my education, skills, and experience.</p>
+                        <a href="#" class="btn primary download-btn">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience-->
+            <section id="experience" class="section" data-title="Experience - Chakradhar's Portfolio">
+                <div class="section-container">
+                    <h1>Experience & Journey</h1>
+
+                    <div class="experience-timeline">
+                        <!-- Current Status -->
+                        <div class="timeline-item current">
+                            <div class="timeline-marker">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="timeline-content glass-card">
+                                <div class="timeline-header">
+                                    <h3>Seeking New Opportunities</h3>
+                                    <span class="timeline-date">2024 - Present</span>
+                                    <div class="availability-badge">
+                                        <i class="fas fa-circle"></i>
+                                        <span>Available for Hire</span>
+                                    </div>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>
+                                        Actively pursuing full-time opportunities in data analytics and business intelligence. 
+                                        Working on projects that reflect real-world problem-solving skills and current industry practices.
+                                    </p>
+                                    <div class="achievements">
+                                        <div class="achievement"><i class="fas fa-trophy"></i><span>5 Data Challenge Wins</span></div>
+                                        <div class="achievement"><i class="fas fa-project-diagram"></i><span>15+ Portfolio Projects</span></div>
+                                        <div class="achievement"><i class="fas fa-certificate"></i><span>8 Professional Certifications</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Self-Learning -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="timeline-content glass-card">
+                                <div class="timeline-header">
+                                    <h3>Self-Directed Learning</h3>
+                                    <span class="timeline-date">2022 - 2024</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>
+                                        Focused learning on data analytics tools through online platforms, data challenges, and project building.
+                                    </p>
+                                    <div class="skills-developed">
+                                        <span class="skill-tag">Python</span>
+                                        <span class="skill-tag">SQL</span>
+                                        <span class="skill-tag">Power BI</span>
+                                        <span class="skill-tag">Machine Learning</span>
+                                        <span class="skill-tag">Data Visualization</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Research -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-dna"></i>
+                            </div>
+                            <div class="timeline-content glass-card">
+                                <div class="timeline-header">
+                                    <h3>Research - Systems Biology</h3>
+                                    <span class="timeline-date">2020 - 2022</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>
+                                        Research on omics data analysis during Master's at University of Hyderabad. Built foundation in R, statistics, and biological networks.
+                                    </p>
+                                    <div class="research-highlights">
+                                        <div class="highlight"><i class="fas fa-microscope"></i><span>Omics Data Analysis</span></div>
+                                        <div class="highlight"><i class="fas fa-chart-line"></i><span>Statistical Modeling</span></div>
+                                        <div class="highlight"><i class="fas fa-code"></i><span>R Programming</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Education -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-school"></i>
+                            </div>
+                            <div class="timeline-content glass-card">
+                                <div class="timeline-header">
+                                    <h3>Academic Foundation</h3>
+                                    <span class="timeline-date">2015 - 2020</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>
+                                        Integrated Master's in Systems Biology from University of Hyderabad and school education at JNV. Strengthened skills in mathematics, statistics, and logical reasoning.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Achivement-->
+            <section id="achievements" class="section" data-title="Achievements - Chakradhar's Portfolio">
+                <div class="section-container">
+                    <h1>Achievements</h1>
+                    <div class="achievements-timeline">
+
+                        <div class="glass-card achievement-card">
+                            <div class="achievement-content">
+                                <h3>1st Runner Up</h3>
+                                <p>Customer Satisfaction Analysis</p>
+                                <img src="assets/achievements/customer_experience_finalists.png" alt="Customer Satisfaction Challenge Finalist Cerficates" loading="lazy">
+                                <a href="https://www.linkedin.com/posts/zoomcharts_zoomcharts-powerbi-datachallenge-activity-7355963526307311620-_pFN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9y4SkBuDMCUOFBEF1QAO3K3-8MrRRtZZk" class="achievement-link" target="_blank">View on LinkedIn <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="glass-card achievement-card">
+                            <div class="achievement-content">
+                                <h3> Winner</h3>
+                                <p>Mobile Sales Challenge</p>
+                                <img src="assets/achievements/Mobile_Sales_Winner.png" alt="Mobile Sales Winner Certificate" loading="lazy">
+                                <a href="https://www.linkedin.com/posts/zoomcharts_datadna-salestrends-datachallenge-activity-7333868897999237123--903?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9y4SkBuDMCUOFBEF1QAO3K3-8MrRRtZZk" class="achievement-link" target="_blank">View on LinkedIn <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="glass-card achievement-card">
+                            <div class="achievement-content">
+                                <h3>Winner</h3>
+                                <p>Merchandise analytics</p>
+                                <img src="assets/achievements/Merchandise_Sales_Winner.png" alt="Merchandise Sales Challenge Winner Certificate" loading="lazy">
+                                <a href="https://www.linkedin.com/posts/zoomcharts_datadna-zoomcharts-onyxdata-activity-7290783328633344000-XP7e?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9y4SkBuDMCUOFBEF1QAO3K3-8MrRRtZZk" class="achievement-link" target="_blank">View on LinkedIn <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="glass-card achievement-card">
+                            <div class="achievement-content">
+                                <h3>Finalist</h3>
+                                <p>Holiday Sales Challenge</p>
+                                <img src="assets/achievements/Holiday_Sales_Finalists.png" alt="Holiday Sales Challenge Finalist Certificate" loading="lazy">
+                                <a href="https://www.linkedin.com/posts/zoomcharts_zoomcharts-fp20analytics-datachallenge-activity-7285702367923048448-xz-U?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9y4SkBuDMCUOFBEF1QAO3K3-8MrRRtZZk" class="achievement-link" target="_blank">View on LinkedIn <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="glass-card achievement-card">
+                            <div class="achievement-content">
+                                <h3>Finalist</h3>
+                                <p>Supply Chain Analysis</p>
+                                <img src="assets/achievements/Supply_Chain_Finalists.png" alt="Supply Chain Challenge Finalist Certificate" loading="lazy">
+                                <a href="https://www.linkedin.com/posts/zoomcharts_datadna-datadna-zoomcharts-activity-7267928877560197120-VBUy?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9y4SkBuDMCUOFBEF1QAO3K3-8MrRRtZZk" class="achievement-link" target="_blank">View on LinkedIn <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="glass-card achievement-card">
+                            <div class="achievement-content">
+                                <h3>Storyteller</h3>
+                                <p>Supply Chain Analysis</p>
+                                <img src="assets/achievements/supply_chain_story_teller.jpg" alt="Supply Chain Challenge Storyteller Certificate" loading="lazy">
+                                <a href="https://www.linkedin.com/posts/onyxdata_onyx-data-datadna-challenge-november-2024-activity-7268545633777508353-a3If?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9y4SkBuDMCUOFBEF1QAO3K3-8MrRRtZZk" class="achievement-link" target="_blank">View on LinkedIn <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cerficates-->
+            <section id="certifications" class="section" data-title="Certifications - Chakradhar's Portfolio">
+                <div class="section-container">
+                    <h1>Certifications</h1>
+                    <div class="achievements-timeline">
+                        <div class="glass-card achievement-card">
+                            <div class="achievement-content">
+                                <h3>Power BI Certification</h3>
+                                <img src="assets/certificates/PowerBI_LinkedIn_Certificate.jpg" alt="Power BI Certificate" loading="lazy">
+                                <a href="https://www.linkedin.com/learning/certificates/10ff5533da7fad64226dd23114fd9cd3f506c856dc256b16698264e5b49b5018?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B%2BysXB8N1RiOJPxT1jQZvpQ%3D%3D" class="achievement-link" target="_blank">Show Credential <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="glass-card achievement-card">
+                            <div class="achievement-content">
+                                <h3>SQL Certification</h3>
+                                <img src="assets/certificates/SQL_IBM_Certificate.png" alt="SQL Certificate" loading="lazy">
+                                <a href="https://courses.cognitiveclass.ai/certificates/82a9b0e05e2848efa7292680816a496a" class="achievement-link" target="_blank">Show Credential <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="glass-card achievement-card">
+                            <div class="achievement-content">
+                                <h3>Python Certification</h3>
+                                <img src="assets/certificates/Python_IBM_Certificate.png" alt="Python Certificate" loading="lazy">
+                                <a href="https://courses.cognitiveclass.ai/certificates/da04f87052cd429aabcf977f4b007f98#" class="achievement-link" target="_blank">Show Credential <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="glass-card achievement-card">
+                            <div class="achievement-content">
+                                <h3>Tableau Certification</h3>
+                                <img src="assets/certificates/tableau_certificate.jpg" alt="Tableau Certificate" loading="lazy">
+                                <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/21d7c77eab88ea95d787bca03e4333f337f8af26" class="achievement-link" target="_blank">Show Credential <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="glass-card achievement-card">
+                            <div class="achievement-content">
+                                <h3>Python Libraries</h3>
+                                <img src="assets/certificates/FreeCode_Came_DS_Libraries_Certificate.png" alt="Python Libraries Certificate" loading="lazy">
+                                <a href="https://www.freecodecamp.org/certification/fcc16d90941-92a9-4315-8e03-51e50a162286/data-analysis-with-python-v7" class="achievement-link" target="_blank">Show Credential <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="glass-card achievement-card">
+                            <div class="achievement-content">
+                                <h3>HackerRank Python</h3>
+                                <img src="assets/certificates/Python_HackerRank.png" alt="HackerRank Python Certificate" loading="lazy">
+                                <a href="https://www.hackerrank.com/certificates/da511e71fd14" class="achievement-link" target="_blank">Show Credential <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="glass-card achievement-card">
+                            <div class="achievement-content">
+                                <h3>HackerRank SQL Basic</h3>
+                                <img src="assets/certificates/SQL_Basic.png" alt="HackerRank SQL Basic Certificate" loading="lazy">
+                                <a href="https://www.hackerrank.com/certificates/221bffa5839f" class="achievement-link" target="_blank">Show Credential <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="glass-card achievement-card">
+                            <div class="achievement-content">
+                                <h3>SQL Intermediate</h3>
+                                <img src="assets/certificates/SQL_Intermediate.png" alt="HackerRank SQL Intermediate certificate" loading="lazy">
+                                <a href="https://www.hackerrank.com/certificates/d8be7a1c1225" class="achievement-link" target="_blank">Show Credential <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="glass-card achievement-card">
+                            <div class="achievement-content">
+                                <h3>HackerRank SQL Advanced</h3>
+                                <img src="assets/certificates/SQL_Advanced.png" alt="HackerRank SQL Advanced Certificate" loading="lazy">
+                                <a href="https://www.hackerrank.com/certificates/8facce60e43d" class="achievement-link" target="_blank">Show Credential <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services -->
+            <section id="services" class="section" data-title="Services - Chakradhar's Portfolio">
+                <div class="section-container">
+                    <h1>Services</h1>
+                    <div class="services-grid">
+                        <div class="glass-card service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-broom"></i>
+                            </div>
+                            <h3>Data Cleaning & Preparation</h3>
+                            <p>Structure raw data and fix inconsistencies using Python, SQL, and Power Query.</p>
+                        </div>
+
+                        <div class="glass-card service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>SQL & Database Analysis</h3>
+                            <p>Extract, filter, and analyze data from relational databases using advanced SQL.</p>
+                        </div>
+
+                        <div class="glass-card service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Web Scraping</h3>
+                            <p>Gather relevant data from websites using Python libraries like BeautifulSoup and Selenium.</p>
+                        </div>
+
+                        <div class="glass-card service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3>Exploratory Data Analysis</h3>
+                            <p>Identify trends, patterns, and anomalies using visual and statistical exploration techniques.</p>
+                        </div>
+
+                        <div class="glass-card service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3>Data Visualization</h3>
+                            <p>Create decision-driven visuals that bring clarity and context to complex data.</p>
+                        </div>
+
+                        <div class="glass-card service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <h3>Dashboard Development</h3>
+                            <p>Build user-centric dashboards in Power BI, Tableau, and Looker Studio for real-time insights.</p>
+                        </div>
+
+                        <div class="glass-card service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h3>UX/UI Optimization</h3>
+                            <p>Design clear, intuitive dashboards with a user-centric focus to improve decision-making.</p>
+                        </div>
+
+                        <div class="glass-card service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>Automation & Reporting</h3>
+                            <p>Automate repetitive reports and workflows using Python, SQL, and Power BI.</p>
+                        </div>
+
+                        <div class="glass-card service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h3>BI Consulting</h3>
+                            <p>Translate business goals into measurable KPIs and build data pipelines to track them.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="section" data-title="Contact Me - Chakradhar's Portfolio">
+                <div class="section-container">
+                    <h1>Contact Me</h1>
+                    <div class="glass-card contact-card">
+                        <p>Feel free to reach out to me through any of the following platforms</p>
+                        <p>chakradhar251122@gmail.com</p>
+                        <div class="contact-social">
+                            <a href="https://www.linkedin.com/in/chakradhar-mantena/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://x.com/Chakra04062025" target="_blank" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
